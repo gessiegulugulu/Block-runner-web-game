@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="tiny project:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/tiny_project_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="tiny project/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="tiny project" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="com.alibaba:fastjson:1.2.55" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/ui.css">
+    <script src="js/orders.js"></script>
+</head>
+<body>
+<!--上面的bar-->
+<div class="title">
+    <a href="login.html" id="login">登录</a>
+    <div id="title-name"><a href="index.html" style="text-decoration: none;color: #000">在线购物</a></div>
+    <a id="jump_cart" href="cart.html">
+        <img src="resource/icon/shopping_cart.png" alt="" id="icon_cart">
+        <div>我的购物车</div>
+    </a>
+</div>
+
+<!--历史订单-->
+<div class="orders-pane" id="orders" role="tabpanel">
+    <div class="orders-content">
+        <h5>历史订单</h5>
+        <div class="orders-content-table">
+            <table class="orders-content-product-table">
+                <thead class="orders-table-thead">
+                <tr>
+                    <th id="th1">订单</th>
+                    <th id="th2">时间</th>
+                    <th id="th3">详情</th>
+                    <th id="th4">总金额</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>3</td>
+                    <td>2020/5/22 上午7:46:20</td>
+                    <td>Coca-Colar × 6</td>
+                    <td>$49.80</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2020/5/20 下午7:31:19</td>
+                    <td>White T-Shirt × 1</td>
+                    <td>$101.90</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2020/5/12 下午1:21:06</td>
+                    <td>Coca-Colar × 3 ; White T-Shirt × 1</td>
+                    <td>$126.80</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!--下面的bar-->
+<div class="bottom-bar">
+    <div class="self-message">
+        <div id="creator">
+            <img src="resource/icon/personal_profile.png" alt="" id="icon_creator">
+            <div>1752095 范思琪</div>
+        </div>
+        <div id="address">
+            <img src="resource/icon/global_distribution.png" alt="" id="icon_address">
+            上海嘉定区曹安公路4800号同济大学
+        </div>
+        <div id="email">
+            <img src="resource/icon/email.png" alt="" id="icon_email">
+            skyef@foxmail.com
+        </div>
+    </div>
+    <p class="copyright" style="text-align: center;font-size: 11px">
+        Copyright &copy; 2020.All rights reserved.
+    </p>
+</div>
+
+</body>
+</html>

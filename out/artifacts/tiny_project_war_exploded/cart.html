@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        online shopping
+    </title>
+    <!-- import CSS -->
+    <!--    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">-->
+    <link rel="stylesheet" href="css/ui.css">
+    <script src="js/cart.js"></script>
+    <script src="js/post.js"></script>
+</head>
+
+<body>
+<!--上面的bar-->
+<div class="title">
+    <a href="login.html" id="login">登录</a>
+    <div id="title-name"><a href="index.html" style="text-decoration: none;color: #000">在线购物</a></div>
+    <a id="jump_cart" href="cart.html">
+        <img src="resource/icon/shopping_cart.png" alt="" id="icon_cart">
+        <div>我的购物车</div>
+    </a>
+</div>
+<!--内容界面商品展示-->
+<div id="app" style="width: 90%;justify-content: center;margin-bottom: 100px;margin-top: 40px">
+    <section>
+        <div>
+            <h3 style="text-align: center">购物车</h3>
+        </div>
+        <div class="cart-table-container">
+            <table class="cart-table">
+                <thead>
+                <tr>
+                    <th class="pro-thumbnail">商品</th>
+                    <th class="pro-title">名称</th>
+                    <th class="pro-price">价格</th>
+                    <th class="pro-quantity">数量</th>
+                    <th class="pro-subtotal">总计</th>
+                    <th class="pro-remove">删除</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="pro-thumbnail"><img class="img-fluid" src="resource/product/wearing-1.jpg" alt=""/>
+                    </td>
+                    <td class="pro-title">Fashion Overall</td>
+                    <td class="pro-price"><span>$87.00</span></td>
+                    <td class="pro-quantity">
+                        <div class="pro-qty">
+                            <span class="dec qtybtn">-</span>
+                            <input id="temp" type="text" value="2">
+                            <span class="inc qtybtn">+</span>
+                        </div>
+                    </td>
+                    <td class="pro-subtotal"><span>$174.00</span></td>
+                    <td class="pro-remove"><img class="pro-remove-icon" src="resource/icon/delete.png" alt=""></td>
+                </tr>
+                <tr>
+                    <td class="pro-thumbnail"><img class="img-fluid" src="resource/product/wearing-5.jpg" alt=""/>
+                    </td>
+                    <td class="pro-title">Grid Skirt</td>
+                    <td class="pro-price"><span>$120.00</span></td>
+                    <td class="pro-quantity">
+                        <div class="pro-qty"><span class="dec qtybtn">-</span><input type="text" value="1"><span
+                                class="inc qtybtn">+</span></div>
+                    </td>
+                    <td class="pro-subtotal"><span>$120.00</span></td>
+                    <td class="pro-remove"><img class="pro-remove-icon" src="resource/icon/delete.png" alt=""></td>
+                </tr>
+                <tr>
+                    <td class="pro-thumbnail"><img class="img-fluid" src="resource/product/food-3.jpg" alt=""/>
+                    </td>
+                    <td class="pro-title">UCC BLACK</td>
+                    <td class="pro-price"><span>$29.99</span></td>
+                    <td class="pro-quantity">
+                        <div class="pro-qty"><span class="dec qtybtn">-</span><input type="text" value="1"><span
+                                class="inc qtybtn">+</span></div>
+                    </td>
+                    <td class="pro-subtotal"><span>$29.99</span></td>
+                    <td class="pro-remove"><img class="pro-remove-icon" src="resource/icon/delete.png" alt=""></td>
+                </tr>
+                <tr>
+                    <td class="pro-thumbnail"><img class="img-fluid" src="resource/product/furniture-3.jpg"
+                                                   alt=""/></td>
+                    <td class="pro-title">French Sofa</td>
+                    <td class="pro-price"><span>$2999.99</span></td>
+                    <td class="pro-quantity">
+                        <div class="pro-qty"><span class="dec qtybtn">-</span><input type="text" value="1"><span
+                                class="inc qtybtn">+</span></div>
+                    </td>
+                    <td class="pro-subtotal"><span>$2999.99</span></td>
+                    <td class="pro-remove"><img class="pro-remove-icon" src="resource/icon/delete.png" alt=""></td>
+                </tr>
+                </tbody>
+                <thead>
+                <tr>
+                    <th class="pro-thumbnail"></th>
+                    <th class="pro-title"></th>
+                    <th class="pro-price"></th>
+                    <th class="pro-quantity"></th>
+                    <th class="pro-checkout-subtotal"><span>$3323.98</span></th>
+                    <th class="pro-checkout" onclick="checkout()">结算</th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+    </section>
+    <!--    <button onclick="post()" type="button">提交测试-->
+    <!--    </button>-->
+    <!--    <div class=""></div>-->
+</div>
+<!--下面的bar-->
+<div class="bottom-bar">
+    <div class="self-message">
+        <div id="creator">
+            <img src="resource/icon/personal_profile.png" alt="" id="icon_creator">
+            <div>1752095 范思琪</div>
+        </div>
+        <div id="address">
+            <img src="resource/icon/global_distribution.png" alt="" id="icon_address">
+            上海嘉定区曹安公路4800号同济大学
+        </div>
+        <div id="email">
+            <img src="resource/icon/email.png" alt="" id="icon_email">
+            skyef@foxmail.com
+        </div>
+    </div>
+    <p class="copyright" style="text-align: center;font-size: 11px">
+        Copyright &copy; 2020.All rights reserved.
+    </p>
+</div>
+</body>
+</html>

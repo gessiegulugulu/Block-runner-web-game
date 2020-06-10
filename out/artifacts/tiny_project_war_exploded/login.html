@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>online shopping</title>
+    <link rel="stylesheet" href="css/ui.css">
+    <script src="js/login.js"></script>
+</head>
+<body>
+
+<div class="title">
+    <div id="title-name"><a href="index.html" style="text-decoration: none;color: #000">在线购物</a></div>
+</div>
+
+<!--注册和登录-->
+<div class="login-register-wrapper">
+    <div class="login-register-container">
+        <div class="member-area-from-wrap">
+            <div class="login-register-row">
+                <!--登录-->
+                <div class="login-register-col">
+                    <div class="login-reg-form-wrap">
+                        <h4>登录</h4>
+                        <form method="post" id="login-form">
+                            <div class="single-input-item">
+                                <input type="email" placeholder="邮箱" required/>
+                            </div>
+                            <div class="single-input-item">
+                                <input type="password" placeholder="密码" required/>
+                            </div>
+                            <div class="single-input-item">
+                                <button onclick="formSubmit()" class="btn-sqr">登录</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- 注册 -->
+                <div class="login-register-col">
+                    <div class="login-reg-form-wrap sign-up-form">
+                        <h4>注册</h4>
+                        <form action="login.html" method="post" id="register-form">
+                            <div class="single-input-item">
+                                <input type="text" placeholder="昵称" required/>
+                            </div>
+                            <div class="single-input-item">
+                                <input type="email" placeholder="邮箱" required/>
+                            </div>
+                            <div class="single-input-item">
+                                <input type="password" placeholder="输入密码" required/>
+                            </div>
+                            <div class="single-input-item">
+                                <input type="password" placeholder="重新输入密码" required/>
+                            </div>
+                            <div class="single-input-item">
+                                <button onclick="registerSubmit()" class="btn-sqr">注册</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--下面的bar-->
+<div class="bottom-bar">
+    <div class="self-message">
+        <div id="creator">
+            <img src="resource/icon/personal_profile.png" alt="" id="icon_creator">
+            <div>1752095 范思琪</div>
+        </div>
+        <div id="address">
+            <img src="resource/icon/global_distribution.png" alt="" id="icon_address">
+            上海嘉定区曹安公路4800号同济大学
+        </div>
+        <div id="email">
+            <img src="resource/icon/email.png" alt="" id="icon_email">
+            skyef@foxmail.com
+        </div>
+    </div>
+    <p class="copyright" style="text-align: center;font-size: 11px">
+        Copyright &copy; 2020.All rights reserved.
+    </p>
+</div>
+</body>
+</html>

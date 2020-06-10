@@ -1,0 +1,69 @@
+{
+    "user": [
+      {
+        "email":"111@163.com",
+        "password": "111",
+        "name": "User1"
+      },
+      {
+        "email":"222@163.com",
+        "password": "222",
+        "name": "User2"
+      },
+      {
+        "email":"333@163.com",
+        "password": "333",
+        "name": "User3"
+      }
+    ],
+  "cart": [
+    {
+      "thumbnail": "resource/product/wearing-1.jpg",
+      "title":"Fashion Overall",
+      "price": "$87.00",
+      "quantity": 2,
+      "subtotal": "$174.00"
+    },
+    {
+      "thumbnail": "resource/product/wearing-5.jpg",
+      "title":"Grid Skirt",
+      "price": "$120.00",
+      "quantity": 1,
+      "subtotal": "$120.00"
+    },
+    {
+      "thumbnail": "resource/product/food-3.jpg",
+      "title":"UCC BLACK",
+      "price": "$29.99",
+      "quantity": 1,
+      "subtotal": "$29.99"
+    },
+    {
+      "thumbnail": "resource/product/furniture-3.jpg",
+      "title":"French Sofa",
+      "price": "$2999.90",
+      "quantity": 1,
+      "subtotal": "$2999.90"
+    }
+  ],
+  "order": [
+    {
+      "order_id":"3",
+      "order_time": "2020/5/22 上午7:46:20",
+      "order_detail": "Coca-Colar × 6",
+      "order_subtotal": "$49.8"
+    },
+    {
+      "order_id":"2",
+      "order_time": "2020/5/20 下午7:31:19",
+      "order_detail": "White T-Shirt × 1",
+      "order_subtotal": "$101.90"
+    },
+    {
+      "order_id":"1",
+      "order_time": "2020/5/22 下午1:21:06",
+      "order_detail": "Coca-Colar × 3 ; White T-Shirt × 1",
+      "order_subtotal": "$126.80"
+    }
+  ]
+}

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        online shopping
+    </title>
+    <!-- import CSS -->
+    <!--    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">-->
+    <link rel="stylesheet" href="css/ui.css">
+    <script src="js/ui.js"></script>
+    <script src="js/post.js"></script>
+</head>
+
+<body>
+<!--上面的bar-->
+<div class="title">
+    <a href="login.html" id="login">登录</a>
+    <div id="title-name"><a href="index.html" style="text-decoration: none;color: #000">在线购物</a></div>
+    <a id="jump_cart" href="cart.html">
+        <img src="resource/icon/shopping_cart.png" alt="" id="icon_cart">
+        <!--        resource/icon/shopping_cart.png-->
+        <div>我的购物车</div>
+    </a>
+</div>
+<!--内容界面商品展示-->
+<div id="app" style="width: 90%;justify-content: center;margin-bottom: 100px;margin-top: 40px">
+    <section>
+        <div>
+            <h3 style="text-align: center">今日热销</h3>
+            <h5 style="font-weight: normal">521家具大促 满300减30 全民造家 美好生活！ 5月健身季 挪客斗篷睡袋惊喜价！ 港风夏季新品 衬衫短袖 买一送一！ 花样潮电爆款来袭
+                数码家电全场大牌直降！ 潮流换季出击 时尚卫衣不只5折 </h5>
+        </div>
+        <div class="product-container">
+            <div class="product-tab-menu">
+                <ul id="product-tab-menu-list">
+                    <li class="active">服饰</li>
+                    <li>家装</li>
+                    <li>食品</li>
+                </ul>
+            </div>
+            <div id="tab-content">
+                <div class="tab-pane active" id="tab1">
+                    <table class="product-item-container">
+                        <tr>
+                            <td>
+                                <div class="product-item">
+                                    <img class="product-img" src="resource/product/wearing-1.jpg" alt="">
+                                    <div class="product-detail">
+                                        <div class="product-description">Fashion Overall</div>
+                                        <div class="product-price">
+                                            <span class="price-old"><del>$119.00</del></span>
+                                            <span class="price-new">$87.00</span>
+                                        </div>
+                                        <div class="rating">
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                        </div>
+                                        <button onclick="add_to_cart(this)">
+                                            <img class="product-cart" src="resource/icon/shopping_cart.png"
+                                                 alt="">
+                                        </button>
+                                        <!--                                        <a href="cart.html" class="add-to-cart">-->
+                                        <!--                                            <img class="product-cart" src="resource/icon/shopping_cart.png"-->
+                                        <!--                                                 alt="">-->
+                                        <!--                                        </a>-->
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="product-item">
+                                    <img class="product-img" src="resource/product/wearing-2.jpg" alt="">
+                                    <div class="product-detail">
+                                        <div class="product-description">Black Half Sleeve</div>
+                                        <div class="product-price">
+                                            <span class="price-old"><del>$79.00</del></span>
+                                            <span class="price-new">$65.00</span>
+                                        </div>
+                                        <div class="rating">
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                        </div>
+                                        <button onclick="add_to_cart(this)">
+                                            <img class="product-cart" src="resource/icon/shopping_cart.png"
+                                                 alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="product-item">
+                                    <img class="product-img" src="resource/product/wearing-3.jpg" alt="">
+                                    <div class="product-detail">
+                                        <div class="product-description">White T-Shirt</div>
+                                        <div class="product-price">
+                                            <span class="price-old"><del>$130.00</del></span>
+                                            <span class="price-new">$101.90</span>
+                                        </div>
+                                        <div class="rating">
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                        </div>
+                                        <button onclick="add_to_cart(this)">
+                                            <img class="product-cart" src="resource/icon/shopping_cart.png"
+                                                 alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="product-item">
+                                    <img class="product-img" src="resource/product/wearing-5.jpg" alt="">
+                                    <div class="product-detail">
+                                        <div class="product-description">Grid Skirt</div>
+                                        <div class="product-price">
+                                            <span class="price-old"><del>$210.00</del></span>
+                                            <span class="price-new">$120.00</span>
+                                        </div>
+                                        <div class="rating">
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                        </div>
+                                        <button onclick="add_to_cart(this)">
+                                            <img class="product-cart" src="resource/icon/shopping_cart.png"
+                                                 alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="product-item">
+                                    <img class="product-img" src="resource/product/wearing-6.jpg" alt="">
+                                    <div class="product-detail">
+                                        <div class="product-description">Loose Pants</div>
+                                        <div class="product-price">
+                                            <span class="price-old"><del>$130.00</del></span>
+                                            <span class="price-new">$118.00</span>
+                                        </div>
+                                        <div class="rating">
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                        </div>
+                                        <button onclick="add_to_cart(this)">
+                                            <img class="product-cart" src="resource/icon/shopping_cart.png"
+                                                 alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tab-pane" id="tab2">
+                    <table class="product-item-container">
+                        <tr>
+                            <td>
+                                <div class="product-item">
+                                    <img class="product-img" src="resource/product/furniture-1.jpg" alt="">
+                                    <div class="product-detail">
+                                        <div class="product-description">Folding Sofa</div>
+                                        <div class="product-price">
+                                            <span class="price-old"><del>$3000.00</del></span>
+                                            <span class="price-new">$2199.00</span>
+                                        </div>
+                                        <div class="rating">
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                        </div>
+                                        <button onclick="add_to_cart(this)">
+                                            <img class="product-cart" src="resource/icon/shopping_cart.png"
+                                                 alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="product-item">
+                                    <img class="product-img" src="resource/product/furniture-2.jpg" alt="">
+                                    <div class="product-detail">
+                                        <div class="product-description">Brunet Sofa</div>
+                                        <div class="product-price">
+                                            <span class="price-old"><del>$3100.00</del></span>
+                                            <span class="price-new">$2699.00</span>
+                                        </div>
+                                        <div class="rating">
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                        </div>
+                                        <button onclick="add_to_cart(this)">
+                                            <img class="product-cart" src="resource/icon/shopping_cart.png"
+                                                 alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="product-item">
+                                    <img class="product-img" src="resource/product/furniture-3.jpg" alt="">
+                                    <div class="product-detail">
+                                        <div class="product-description">French Sofa</div>
+                                        <div class="product-price">
+                                            <span class="price-old"><del>$3500.00</del></span>
+                                            <span class="price-new">$2999.99</span>
+                                        </div>
+                                        <div class="rating">
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                        </div>
+                                        <button onclick="add_to_cart(this)">
+                                            <img class="product-cart" src="resource/icon/shopping_cart.png"
+                                                 alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="product-item">
+                                    <img class="product-img" src="resource/product/furniture-4.jpg" alt="">
+                                    <div class="product-detail">
+                                        <div class="product-description">Isolated Sofa</div>
+                                        <div class="product-price">
+                                            <span class="price-old"><del>$1000.00</del></span>
+                                            <span class="price-new">$899.99</span>
+                                        </div>
+                                        <div class="rating">
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                        </div>
+                                        <button onclick="add_to_cart(this)">
+                                            <img class="product-cart" src="resource/icon/shopping_cart.png"
+                                                 alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="product-item">
+                                    <img class="product-img" src="resource/product/furniture-6.jpg" alt="">
+                                    <div class="product-detail">
+                                        <div class="product-description">Fashion Table</div>
+                                        <div class="product-price">
+                                            <span class="price-old"><del>$830.00</del></span>
+                                            <span class="price-new">$700.00</span>
+                                        </div>
+                                        <div class="rating">
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                        </div>
+                                        <button onclick="add_to_cart(this)">
+                                            <img class="product-cart" src="resource/icon/shopping_cart.png"
+                                                 alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tab-pane" id="tab3">
+                    <table class="product-item-container">
+                        <tr>
+                            <td>
+                                <div class="product-item">
+                                    <img class="product-img" src="resource/product/food-1.jpg" alt="">
+                                    <div class="product-detail">
+                                        <div class="product-description">Coca-Colar</div>
+                                        <div class="product-price">
+                                            <span class="price-old"><del>$18.90</del></span>
+                                            <span class="price-new">$8.30</span>
+                                        </div>
+                                        <div class="rating">
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                        </div>
+                                        <button onclick="add_to_cart(this)">
+                                            <img class="product-cart" src="resource/icon/shopping_cart.png"
+                                                 alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="product-item">
+                                    <img class="product-img" src="resource/product/food-2.jpg" alt="">
+                                    <div class="product-detail">
+                                        <div class="product-description">Soymilk wafer</div>
+                                        <div class="product-price">
+                                            <span class="price-old"><del>$23.6</del></span>
+                                            <span class="price-new">$16.6</span>
+                                        </div>
+                                        <div class="rating">
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                        </div>
+                                        <button onclick="add_to_cart(this)">
+                                            <img class="product-cart" src="resource/icon/shopping_cart.png"
+                                                 alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="product-item">
+                                    <img class="product-img" src="resource/product/food-3.jpg" alt="">
+                                    <div class="product-detail">
+                                        <div class="product-description">UCC BLACK</div>
+                                        <div class="product-price">
+                                            <span class="price-old"><del>$50.00</del></span>
+                                            <span class="price-new">$29.99</span>
+                                        </div>
+                                        <div class="rating">
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                        </div>
+                                        <button onclick="add_to_cart(this)">
+                                            <img class="product-cart" src="resource/icon/shopping_cart.png"
+                                                 alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="product-item">
+                                    <img class="product-img" src="resource/product/food-4.jpg" alt="">
+                                    <div class="product-detail">
+                                        <div class="product-description">MAXIM</div>
+                                        <div class="product-price">
+                                            <span class="price-old"><del>$79.00</del></span>
+                                            <span class="price-new">$60.00</span>
+                                        </div>
+                                        <div class="rating">
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                        </div>
+                                        <button onclick="add_to_cart(this)">
+                                            <img class="product-cart" src="resource/icon/shopping_cart.png"
+                                                 alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="product-item">
+                                    <img class="product-img" src="resource/product/food-5.jpg" alt="">
+                                    <div class="product-detail">
+                                        <div class="product-description">Cookie</div>
+                                        <div class="product-price">
+                                            <span class="price-old"><del>$20.00</del></span>
+                                            <span class="price-new">$12.30</span>
+                                        </div>
+                                        <div class="rating">
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                            <span>⭐</span>
+                                        </div>
+                                        <button onclick="add_to_cart(this)">
+                                            <img class="product-cart" src="resource/icon/shopping_cart.png"
+                                                 alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!--下面的bar-->
+<div class="bottom-bar">
+    <div class="self-message">
+        <div id="creator">
+            <img src="resource/icon/personal_profile.png" alt="" id="icon_creator">
+            <div>1752095 范思琪</div>
+        </div>
+        <div id="address">
+            <img src="resource/icon/global_distribution.png" alt="" id="icon_address">
+            上海嘉定区曹安公路4800号同济大学
+        </div>
+        <div id="email">
+            <img src="resource/icon/email.png" alt="" id="icon_email">
+            skyef@foxmail.com
+        </div>
+    </div>
+    <p class="copyright" style="text-align: center;font-size: 11px">
+        Copyright &copy; 2020.All rights reserved.
+    </p>
+</div>
+</body>
+</html>
